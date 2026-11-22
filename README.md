@@ -123,6 +123,24 @@ git push
 
 Changes go live in about a minute.
 
+### If a change doesn't show up
+
+GitHub Pages caches CSS/JS for ~10 minutes. Hard-refresh the page
+(`Cmd`+`Shift`+`R` on Mac, `Ctrl`+`F5` on Windows) or wait a few minutes.
+
+---
+
+## Troubleshooting
+
+- **Projects grid is empty / says "GitHub unreachable"** — the public GitHub API
+  is rate-limited to 60 requests/hour per IP. It recovers on its own; the saved
+  list in `OFFLINE_PROJECTS` keeps the grid populated meanwhile.
+- **A new repo doesn't appear** — make sure it isn't listed in `HIDDEN`, and
+  hard-refresh (the API response is fetched on every load, but the JS file
+  itself may be cached).
+- **Fonts look different** — Google Fonts needs a connection; otherwise the
+  page falls back to Georgia / system sans / monospace, which still works.
+
 ---
 
 Built by hand. ✳
