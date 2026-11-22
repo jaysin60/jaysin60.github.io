@@ -1,0 +1,9 @@
+# Original resume source at the repo root — the published copy lives in assets/
+/Jayant_Singh_Singoria_Resume_2025.docx
+
+# macOS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
