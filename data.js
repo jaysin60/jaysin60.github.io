@@ -62,7 +62,10 @@ window.SITE_DATA = {
   },
 
   /* 3. REPOS TO LEAVE OFF THE PAGE ---------------------------------------- */
-  HIDDEN: ['spark'], // plain fork of apache/spark, not my own work
+  HIDDEN: [
+    'spark',              // plain fork of apache/spark, not my own work
+    'jaysin60.github.io', // this website itself
+  ],
 
   /* Fallback shown if the GitHub API is unreachable / rate-limited.
      Handy for viewing the page offline. Keep roughly in sync with above. */
